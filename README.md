@@ -5,7 +5,7 @@ This script is designed to facilitate processing of 16S sequencing data with Spi
 
 ## Installation 
 
-To use this script on your own data you must have anaconda/miniconda installed with python 3.7, biopython (tested with 1.7.3), pandas (tested with 0.24.2) and numpy (tested with 1.16.3). You can install miniconda here[(https://docs.conda.io/en/latest/miniconda.html#macosx-installers)]. 
+To use this script on your own data you must have anaconda/miniconda installed with python 3.7, biopython (tested with 1.7.3), pandas (tested with 0.24.2) and numpy (tested with 1.16.3). You can install miniconda [here](https://docs.conda.io/en/latest/miniconda.html#macosx-installers). 
 
 Once you have conda, clone this git repository, and run the following to install all required packages: 
 
@@ -13,7 +13,7 @@ Once you have conda, clone this git repository, and run the following to install
 conda env create -f environment.yml
 ```
 
-Additionally, BLAST is required to determine which OTU sequences are spikes. Instructions for installing BLAST can be found here[(https://www.ncbi.nlm.nih.gov/books/NBK52637/)]. Make sure to check the BLAST cli application is in your path before starting by opening a terminal and running:
+Additionally, BLAST is required to determine which OTU sequences are spikes. Instructions for installing BLAST can be found [here](https://www.ncbi.nlm.nih.gov/books/NBK52637/). Make sure to check the BLAST cli application is in your path before starting by opening a terminal and running:
 
 ```
 blastn -h
