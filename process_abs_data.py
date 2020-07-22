@@ -168,8 +168,8 @@ def filter_blast_results(blast_out):
     :return: OTUs > 98% identity with Spikes and eval < 1e-50
     """
     blast_res = pd.read_csv(blast_out, sep="\t", header=None)
-    if not blast_res[blast_res.iloc[:, 2] > 98].empty:
-        spike_hits = blast_res[blast_res.iloc[:, 2] > 98]
+    if not blast_res[blast_res.iloc[:, 2] > 97].empty:
+        spike_hits = blast_res[blast_res.iloc[:, 2] > 97]
     else:
         print("No hits with significant identity found")
         return None
