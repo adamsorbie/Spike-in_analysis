@@ -255,7 +255,7 @@ def calc_abs_abund(norm_otu, list_spikes, mapping, weight_col, ng_spike):
     # use generate_analysis_record function to create dataframe
     calculations_record = generate_analysis_record(list_np, norm_otu.T, col_list)
 
-    return bacteria_per_mg, calculations_record
+    return adjusted_bac_rps, calculations_record
 
 
 def generate_abs_abund(norm_otu, original_otu, list_spikes, tax_col, **kwargs):
