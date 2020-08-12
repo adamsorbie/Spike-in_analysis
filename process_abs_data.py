@@ -165,7 +165,7 @@ def filter_blast_results(blast_out):
     """
 
     :param str blast_out: filename of BLAST results
-    :return: OTUs > 98% identity with Spikes and eval < 1e-50
+    :return: OTUs > 97% identity with Spikes and eval < 1e-40
     """
     blast_res = pd.read_csv(blast_out, sep="\t", header=None)
     if not blast_res[blast_res.iloc[:, 2] > 97].empty:
